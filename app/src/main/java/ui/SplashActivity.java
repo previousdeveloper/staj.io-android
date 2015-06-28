@@ -52,10 +52,14 @@ public class SplashActivity extends ActionBarActivity {
     }
 
     @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
+
+    @Override
     protected void onPause() {
         super.onPause();
         handler.removeCallbacks(runnable);
-
 
     }
 }
